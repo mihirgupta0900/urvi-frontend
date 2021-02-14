@@ -23,9 +23,11 @@ const Index: FC<PageProps<Data>> = ({ data }) => {
                   Economics student who loves to illustrate
                 </h3>
                 <div className="flex mt-10 md:justify-start justify-center">
-                  <button className="md:py-2 py-1 md:px-4 px-2 rounded-md bg-secondary">
-                    Contact Me!
-                  </button>
+                  <a href="https://twitter.com/urvi_jain8">
+                    <button className="md:py-2 py-1 md:px-4 px-2 rounded-md bg-secondary">
+                      Contact Me!
+                    </button>
+                  </a>
                 </div>
               </div>
             </TopFade>
