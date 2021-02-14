@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+.fullBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    90deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(17, 17, 17, 1) 35%,
+    rgba(16, 16, 16, 1) 65%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
