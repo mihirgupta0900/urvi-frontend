@@ -2,6 +2,8 @@ import { graphql, PageProps } from "gatsby";
 import React, { FC } from "react";
 import Layout from "../components/Layout";
 import Img, { FluidObject } from "gatsby-image";
+import TopFade from "../components/TopFade";
+import Fade from "../components/Fade";
 
 const Visdom: FC<PageProps<Data>> = ({ data }) => {
   return (
@@ -11,24 +13,28 @@ const Visdom: FC<PageProps<Data>> = ({ data }) => {
           style={{ height: "20vh" }}
           className="flex justify-center items-center "
         >
-          <h1 className="md:text-7xl text-6xl uppercase text-center md:w-1/4 font-bold mx-auto border-b-4 border-secondary">
-            Vis-Dom
-          </h1>
+          <TopFade>
+            <h1 className="md:text-7xl text-6xl uppercase text-center md:w-1/4 font-bold mx-auto border-b-4 border-secondary">
+              Vis-Dom
+            </h1>
+          </TopFade>
         </div>
         <div
           style={{ minHeight: "100vh" }}
           className="flex flex-wrap justify-around mt-10 mx-20"
         >
           {data.strapi.visdoms.map((visdom) => (
-            <div className="md:w-1/4 w-full">
-              <div className=" rounded-md">
-                <Img
-                  fluid={visdom.pic.imageFile.childImageSharp.fluid}
-                  className="w-full rounded-md"
-                />
+            <Fade>
+              <div className="md:w-1/4 w-full">
+                <div className=" rounded-md">
+                  <Img
+                    fluid={visdom.pic.imageFile.childImageSharp.fluid}
+                    className="w-full rounded-md"
+                  />
+                </div>
+                <p className="text-center mt-6 text-xl">{visdom.name}</p>
               </div>
-              <p className="text-center mt-6 text-xl">{visdom.name}</p>
-            </div>
+            </Fade>
           ))}
         </div>
       </Layout>
