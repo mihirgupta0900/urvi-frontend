@@ -12,7 +12,7 @@ export const onRenderBody = ({ setPostBodyComponents, setHeadComponents }) => {
       data-id="urvijain"
       data-description="Support me on Buy me a coffee!"
       data-message="Hey there, thanks for dropping by! You can now treat me to a fragrant coffee :D"
-      data-color="#FFDD00"
+      data-color="#08d9d6"
       data-position="Right"
       data-x_margin="18"
       data-y_margin="18"

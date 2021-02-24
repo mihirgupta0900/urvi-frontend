@@ -14,9 +14,12 @@ const Visdom: FC<PageProps<Data>> = ({ data }) => {
           className="flex justify-center items-center "
         >
           <TopFade>
-            <h1 className="md:text-7xl text-6xl uppercase text-center md:w-1/4 font-bold mx-auto border-b-4 border-secondary">
-              Vis-Dom
-            </h1>
+            <div className="flex flex-col w-full mx-40 md:mx-52">
+              <h1 className="md:text-7xl text-6xl uppercase font-bold">
+                VisDom
+              </h1>
+              <span className="h-1 bg-secondary md:w-1/2 w-full"></span>
+            </div>
           </TopFade>
         </div>
         <div
